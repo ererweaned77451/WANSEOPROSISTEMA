@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-600: #059669;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+}
+
+/* Force hex for common tailwind variables that might use oklch by default */
+:root {
+  --slate-900: #0f172a !important;
+  --slate-400: #94a3b8 !important;
+  --orange-600: #ea580c !important;
+  --orange-100: #ffedd5 !important;
+}
+
+@layer base {
+  * {
+    border-color: #e2e8f0;
+  }
+}
